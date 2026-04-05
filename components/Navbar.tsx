@@ -23,6 +23,7 @@ export function Navbar() {
     { name: "Cinematic", href: "/cinematic" },
     { name: "Glass", href: "/glass" },
     { name: "Gestural", href: "/gestural" },
+    { name: "Experimental", href: "/exp" },
   ];
 
   return (
