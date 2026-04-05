@@ -9,24 +9,29 @@ Welcome to the **Next.js Carousel Collection**! This project is a curated librar
 
 ## 🚀 Features
 
+- **Classic Styles**: Traditional, visually clean slider interfaces.
 - **Cinematic Hero**: Immersive, full-screen cinematic carousels.
+- **Depth Slider**: Interactive depth-based perspective sliders.
+- **Glassmorphic**: Elegant glassmorphic carousel designs.
+- **Gestural UI**: Intuitive, touch and gesture-driven carousels.
+- **Experimental**: Cutting-edge and unconventional carousel setups.
 - **Coverage Flow 3D (`UACoverFlow3D`)**: Gorgeous 3D rotational interactions for browsing media.
 - **Cyber Ring 3D (`UACyberRing3D`)**: Futuristic, rotating 3D ring components.
 - **Parallax Magnetic (`UAParallaxMagnetic`)**: Smooth, magnetic cursors paired with deep parallax scroll effects.
-- **Depth Slider**: Interactive depth-based perspective sliders.
 - **Dark & Light Mode Integration**: Built-in support for theme switching via `next-themes`.
-- **Fully Responsive**: Flawless scaling from mobile to desktop.
+- **Fully Responsive**: Flawless scaling from mobile to desktop with a custom mobile-friendly menu.
 - **Micro-interactions**: Enhanced with Framer Motion for buttery-smooth animations and transitions.
 
 ## 🛠️ Technology Stack
 
 This project is built using the bleeding edge of modern web development:
 
-- **Framework**: [Next.js 16 (Turbopack)](https://nextjs.org/)
+- **Framework**: [Next.js App Router](https://nextjs.org/)
 - **UI Library**: [React 19](https://react.dev/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Icons**: [Lucide React](https://lucide.dev/)
+- **Theming**: [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## 📂 Project Structure
 
@@ -34,16 +39,20 @@ This project is built using the bleeding edge of modern web development:
 ├── components/
 │   ├── carousels/
 │   │   ├── cinematic/            # Cinematic Carousel setups
-│   │   ├── classic/              # Classic slider
+│   │   ├── classic/              # Classic sliders
 │   │   ├── depth/                # Depth-based sliders
+│   │   ├── exp/                  # Experimental sliders
+│   │   ├── gestural/             # Gestural interactions
+│   │   ├── glass/                # Glassmorphic components
 │   │   ├── UACoverFlow3D.tsx     # 3D Cover flow carousel
 │   │   ├── UACyberRing3D.tsx     # Futuristic Ring 3D
 │   │   ├── UAHeroCinematic.tsx   # Cinematic Hero Section
 │   │   └── UAParallaxMagnetic.tsx# Magnetic Parallax Slider
-│   ├── ui/                       # Reusable UI elements (Navbar, Theme Switcher, etc.)
+│   ├── Navbar.tsx                # Main responsive navigation
+│   ├── ui/                       # Reusable UI elements
 ├── utils/
 │   └── mockData.ts               # Sample mock data for slides
-├── app/                          # Next.js App Router setup
+├── app/                          # Next.js App Router routing
 └── public/                       # Static images and assets
 ```
 

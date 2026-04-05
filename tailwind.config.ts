@@ -1,18 +1,25 @@
-module.exports = {
+// tailwind.config.ts
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  darkMode: "class", // <--- ADD THIS
+  content:[
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
-        'ua-black': '#050505',
-        'ua-neon': '#00f3ff',
-        'ua-purple': '#b026ff',
+        ua: {
+          black: "#050505",
+          white: "#fbfbfd", // Apple-style off-white
+          neon: "#00f3ff",
+          purple: "#b026ff",
+        }
       },
-      backgroundImage: {
-        'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
-      },
-      boxShadow: {
-        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-        'neon-glow': '0 0 20px rgba(0, 243, 255, 0.3)',
-      }
-    }
-  }
-}
+    },
+  },
+  plugins:[],
+};
+export default config;
